@@ -38,9 +38,9 @@ namespace ReadWriteCollectionApp
         public ICommand SaveToFileCommand { get; set; }
         public ICommand ReadFromFileCommand { get; set; }
 
-        public MainPageVM(SaveLoadService injectedService)
+        public MainPageVM()
         {
-            Service = injectedService;
+            Service = new SaveLoadService();
             //Initialize Collection with some items
             Collection = new ObservableCollection<string>()
             {

@@ -11,10 +11,10 @@ namespace ReadWriteCollectionApp
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage(SaveLoadService service)
+        public MainPage()
         {
             InitializeComponent();
-            BindingContext = new MainPageVM(service);
+            BindingContext = new MainPageVM();
         }
     }
 }

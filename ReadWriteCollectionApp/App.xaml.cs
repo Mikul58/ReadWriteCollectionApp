@@ -10,8 +10,7 @@ namespace ReadWriteCollectionApp
         public App()
         {
             InitializeComponent();
-            SaveLoadService service = new SaveLoadService();
-            MainPage = new MainPage(service);
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
